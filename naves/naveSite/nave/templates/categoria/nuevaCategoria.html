@@ -1,0 +1,25 @@
+
+
+
+{% extends "base.html" %}
+
+{% block title %}My amazing blog{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <form method="POST" enctype="multipart/form-data">
+
+         {% csrf_token %}
+
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-1-12 col-form-label"></label>
+                <div class="col-sm-1-12">
+                    <input type="text" class="form-control" name="inputName" id="inputName" placeholder="" value={{descripcion}}>
+                </div>
+            </div>
+<button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+{% endblock %}
