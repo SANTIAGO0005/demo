@@ -1,5 +1,5 @@
-from tipo_nave import Tipo_nave
-from nave import Nave
+from Estacion_Espacial.tipo_nave import Tipo_nave
+from Estacion_Espacial.nave import Nave
 
 class nave_robotica(Nave, Tipo_nave):
 
