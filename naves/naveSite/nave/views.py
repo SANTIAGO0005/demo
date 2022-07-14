@@ -4,6 +4,8 @@ from .forms import CategoriaForm
 
 # Create your views here.
 
+"""  render to django admin  """
+
 def index(request):
     return render(request, 'index.html')
 

@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 from nave.views import (index,nuevaCategoria)
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', index, name='index'),
+    path('', admin.site.urls),
+    #path('index/', index, name='index'),
     path('newcategoria/', nuevaCategoria, name='nuevaCategoria'),
 ]
