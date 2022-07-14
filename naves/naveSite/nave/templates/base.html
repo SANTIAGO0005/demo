@@ -27,11 +27,8 @@
                 </li>
                 <li class="nav-item">
                     <!-- nueva categoria django -->
-                    <a class="nav-link" href="{% url 'nuevaCategoria' %}">Nueva Categoria</a>
-                 {% if request.user.is_authenticated %}
-                 {% else %}
-                  <a class="nav-link" href="{% url 'login' %}">Login</a>
-                 {% endif %}
+                    <!--   <a class="nav-link" href="{% url 'nuevaCategoria' %}">Nueva Categoria</a> -->
+
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
